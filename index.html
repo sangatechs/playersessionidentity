@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>How Online Games Distinguish Players Within the Same Session</title>
+  <meta name="google-site-verification" content="M-RtL7Jm3ZZzw2oxeJBL5jsOz39aiLDl4fvXcs1Xd7c" />
 <script>const c=document.createElement('link');c.rel='canonical';c.href=window.location.href;document.head.appendChild(c);</script>
 <script type="application/ld+json">
 {
@@ -131,6 +132,8 @@
   <h2>Visibility Rules and Participant Identity</h2>
   <p>Participant identity is also the mechanism through which card visibility rules are applied correctly. When the server prepares a state update for delivery to a specific participant, it uses that participant's session identity to determine which cards should appear face-up and which should appear face-down in their view. Cards belonging to this participant are shown face-up in their view. Cards belonging to other participants appear face-down unless a game event has made them shared-visible.</p>
   <p>The state update delivered to each participant is therefore individualized — it reflects the same shared game state but presents it from that specific participant's informational perspective. This per-participant customization of the state delivery depends entirely on reliable participant identification. Without it, the system would have no basis for determining which cards each interface should show and which it should conceal.</p>
+
+<p>Once participants are distinguishable, every submitted interaction needs to remain associated with the person who initiated it. That leads naturally to <a href="https://al4557.github.io/playeractionownership/">action ownership tracking</a> and how shared systems maintain attribution.</p>
 </div>
 <footer>
   <p>&copy; 2025 3pattiworldapp.com.pk &mdash; Digital Card Game Technical Concepts</p>
